@@ -26,7 +26,6 @@
               <a href="ConsejosDeSeguridad.html">Consejos de seguridad</a>
             </li>
             <li><a href="Contáctanos.html">¡contáctanos!</a></li>
-            <li><a href="ponteaprueba.html">Ponte a prueba</a></li>
           </ul>
         </nav>
       </header>
@@ -40,25 +39,47 @@
             <div class="col-md-8">
               <div class="dialogo p-4 rounded bg-dark text-white shadow mb-3">
                 <p class="mb-1">
-                  Aquí Gumshoe otra vez! Espero Geno y Boshi no les hayan causado problemas. Si quieres seguir en la senda de la seguridad, te recomiendo seguir estas pequeñas pero efectivas reglas para no caer en trampas digitales y así puedas cuidarte a ti y a tu gente ♥♥♥ :
+                  Aquí Gumshoe otra vez! Espero Geno y Boshi no les hayan
+                  causado problemas. Si quieres seguir en la senda de la
+                  seguridad, te recomiendo seguir estas pequeñas pero efectivas
+                  reglas para no caer en trampas digitales y así puedas cuidarte
+                  a ti y a tu gente ♥♥♥ :
                 </p>
                 <ul>
-                  <li>Usa contraseñas largas y únicas. Así, si descubren alguna, las demás estarán seguras.</li>
-                  <li>No confíes en enlaces sospechosos. Si no sabes o te moviliza la curiosidad, mejor averigua antes de abrir un enlace. Idealmente, si no sabes su origen, no lo abras.</li>
-                  <li>Actualiza tu software constantemente. Al estar al día, también se actualizan los protocolos de seguridad.</li>
-                  <li>Usa autenticación en dos pasos. Puede ser más tedioso pero definitivamente será más seguro.</li>
-                  <li>Cuidado con lo que compartes en redes. Cuida a las niñeces con las que te relacionas.</li>
+                  <li>
+                    Usa contraseñas largas y únicas. Así, si descubren alguna,
+                    las demás estarán seguras.
+                  </li>
+                  <li>
+                    No confíes en enlaces sospechosos. Si no sabes o te moviliza
+                    la curiosidad, mejor averigua antes de abrir un enlace.
+                    Idealmente, si no sabes su origen, no lo abras.
+                  </li>
+                  <li>
+                    Actualiza tu software constantemente. Al estar al día,
+                    también se actualizan los protocolos de seguridad.
+                  </li>
+                  <li>
+                    Usa autenticación en dos pasos. Puede ser más tedioso pero
+                    definitivamente será más seguro.
+                  </li>
+                  <li>
+                    Cuidado con lo que compartes en redes. Cuida a las niñeces
+                    con las que te relacionas.
+                  </li>
                 </ul>
               </div>
               <p id="colorTexto">¿quieres saber más?</p>
-              <br>
-              <a
-                href="ponteaprueba.html"
+              <br />
+              <button
+                type="button"
                 class="btn btn-warning btn-lg fw-bold border-dark shadow"
+                data-bs-toggle="modal"
+                data-bs-target="#testModal"
               >
                 Ponte a prueba 𖥔
-              </a>
-                            <a
+              </button>
+              <a
                 href="Contáctanos.html"
                 class="btn btn-warning btn-lg fw-bold border-dark shadow"
               >
@@ -66,7 +87,6 @@
               </a>
             </div>
 
-            
             <div class="col-md-4 text-center">
               <img
                 src="IMGS/Gumshoe2.webp"
@@ -87,6 +107,80 @@
         mal
       </p>
     </footer>
+
+    <div
+      class="modal fade"
+      id="testModal"
+      tabindex="-1"
+      aria-labelledby="testModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div style="background-color: #ffeeee; class="modal-content p-3" >
+          <div
+            class="modal-body d-flex flex-column flex-md-row align-items-center gap-3"
+          >
+            <div class="text-center">
+              <img
+                src="IMGS/Geno2.webp"
+                alt="Geno te pregunta"
+                class="img-fluid"
+                style="max-width: 150px; border-radius: 10px"
+              />
+              <p class="mt-2 fw-bold">Yo te ayudo a responder estas preguntas ☆☆☆ </p>
+            </div>
+
+            <!-- Preguntas -->
+            <form id="testForm" class="flex-grow-1">
+              <div class="mb-3">
+                <label
+                  ><strong
+                    >1. ¿Cuál de estas contraseñas es más segura?</strong
+                  ></label
+                ><br />
+                <input type="radio" name="q1" value="a" /> a) 123456<br />
+                <input type="radio" name="q1" value="b" /> b) MiNombre2020<br />
+                <input type="radio" name="q1" value="c" /> c) #Gk!9zP@u7<br />
+              </div>
+
+              <div class="mb-3">
+                <label
+                  ><strong
+                    >2. ¿Qué deberías hacer con los correos sospechosos?</strong
+                  ></label
+                ><br />
+                <input type="radio" name="q2" value="a" /> a) Responder para
+                preguntar<br />
+                <input type="radio" name="q2" value="b" /> b) Reenviarlo a tus
+                contactos<br />
+                <input type="radio" name="q2" value="c" /> c) No abrirlo ni
+                hacer clic<br />
+              </div>
+
+              <div class="mb-3">
+                <label
+                  ><strong
+                    >3. ¿Qué significa “doble autenticación”?</strong
+                  ></label
+                ><br />
+                <input type="radio" name="q3" value="a" /> a) Iniciar sesión dos
+                veces<br />
+                <input type="radio" name="q3" value="b" /> b) Verificar con dos
+                factores distintos<br />
+                <input type="radio" name="q3" value="c" /> c) Es un antivirus
+                avanzado<br />
+              </div>
+
+              <button type="submit" class="btn btn-success mt-2">
+                Ver resultados
+              </button>
+              <div id="resultado" class="mt-3 fw-bold"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="JSCyberGumshoe.js"></script>
   </body>

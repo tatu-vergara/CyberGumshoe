@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="StyleCyberGumshoe.css" />
   </head>
 
-  <body>
-        <div class="wrapper">
+<body>
+  <div class="wrapper">
     <header class="contenedor-nav">
       <h1 class="logo"><a href="indexCyberGumshoe.html">Cyber Gumshoe</a></h1>
       <nav class="navegacion">
@@ -24,19 +24,61 @@
           <li><a href="AmenazasComunes.html">Amenazas comunes</a></li>
           <li><a href="ConsejosDeSeguridad.html">Consejos de seguridad</a></li>
           <li><a href="Contáctanos.html">¡contáctanos!</a></li>
-          <li><a href="ponteaprueba.html">Ponte a prueba</a></li>
         </ul>
       </nav>
     </header>
-</div>
-    <footer class="footer">
-      <p>Una Marca de Tatu Vergara ©</p>
-      <p>
-        Diseñada para cuidar a tus cyber they/them - otakus de las garras del
-        mal
-      </p>
-    </footer>
 
+    <section class="container my-5">
+      <div class="row align-items-center">
+        <!-- Imagen y globo de Boshi -->
+        <div class="col-md-4 text-center position-relative">
+          <div class="dialogo-sobre-imagen bg-dark text-white rounded shadow p-3">
+            Contáctanos, prometo no robarme tus galletas ♧ ♧ ♧
+          </div>
+          <img src="IMGS/Boshi2.webp" alt="Boshi" class="img-fluid character-img mt-3" style="transform: scaleX(-1);" id="boshiFormImg" />
+        </div>
+
+        <!-- Formulario -->
+        <div class="col-md-8">
+          <form id="formContacto">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" required />
+            </div>
+
+            <div class="mb-3">
+              <label for="fechaNacimiento" class="form-label">Fecha de nacimiento</label>
+              <input type="date" class="form-control" id="fechaNacimiento" required />
+            </div>
+
+            <div class="mb-3">
+              <label for="pregunta" class="form-label">Pregunta</label>
+              <textarea class="form-control" id="pregunta" rows="5" maxlength="500" required></textarea>
+              <div class="form-text">Máximo 500 caracteres.</div>
+            </div>
+
+            <button type="submit" class="btn btn-warning fw-bold border-dark shadow">Enviar</button>
+            <div id="mensajeEnviado" class="mt-3 text-success fw-bold" style="display: none;">¡Formulario enviado!</div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <p>Una Marca de Tatu Vergara ©</p>
+    <p>Diseñada para cuidar a tus cyber they/them - otakus de las garras del mal</p>
+  </footer>
+
+<div id="modalGracias" style="display: none;" class="modal-custom">
+  <div class="modal-content-custom">
+    <span id="cerrarModal" class="cerrar">&times;</span>
+    <h2>¡Gracias por escribir!</h2>
+    <p>Tu mensaje ha sido enviado correctamente.</p>
+  </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="JSCyberGumshoe.js"></script>
+
   </body>
 </html>
