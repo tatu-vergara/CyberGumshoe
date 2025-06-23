@@ -1,7 +1,7 @@
 Página realizada por Tatu Vergara.
 ## Descripción
 Esta es una página de ciberseguridad inspirada en un personaje de Ace Attorney, denominada CyberGumshoe.
-CyberGumshoe es una página de 4 
+CyberGumshoe es una página de 4 landings distintos.
 En ella se aplicaron distintos lenguajes, principalmente HTML, CSS y JavaScript.
 Esta página consiste en 4 HTML principales, de los cuáles dos tienen módulos:
 1. El primer landing, donde introducimos la temática de la página, donde nos acompaña Gumshoe y nos ayuda a navegar el resto del sitio
