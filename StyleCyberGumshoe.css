@@ -1,0 +1,192 @@
+
+body {
+    font-family: salvatore;
+    margin: 0;
+    padding: 0;
+    background-color: #ffeeee
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedor-nav {
+  background-color: #fbe7b4;
+  color: rgb(0, 0, 0);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo a:hover {
+  color: white;          
+}
+
+
+
+.navegacion {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+p {
+  margin: 0;
+  line-height: 1,2;
+}
+
+.navegacion {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  font-weight: bolder;
+  color: black;
+  cursor: pointer;
+  font-family: inherit;    
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: bolder;
+}
+
+.nav-links a:hover {
+  color: white;          
+}
+
+.logout-btn {
+  background-color: #00bcd4;
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(102, 110, 255);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor:pointer;
+  font-size: 0.9rem;
+  font-family: 'Salvatore'
+}
+
+.logout-btn:hover {
+  background-color: #f2c94c; 
+  color: #222; 
+  transition: all 0.3s ease;
+}
+
+.hero-section {
+  background-color: #ffeeee;
+  position: relative;
+  overflow: hidden;
+  padding: 2rem 1rem 3rem 1rem;
+  margin-top: 0;
+}
+
+.bg-image {
+    cursor: pointer;
+}
+
+@keyframes vibrar {
+  0%   { transform: translate(0); }
+  25%  { transform: translate(-2px, 2px); }
+  50%  { transform: translate(2px, -2px); }
+  75%  { transform: translate(-2px, -2px); }
+  100% { transform: translate(2px, 2px); }
+}
+
+.vibrando {
+  animation: vibrar 0.2s linear 3;
+}
+
+.dialogo {
+  position: relative;
+  background-color: #222;
+  border-radius: 10px;
+  padding: 1rem;
+  color: white;
+  font-family: 'Courier New', monospace;
+}
+
+.dialogo::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -20px; 
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 20px solid #222; 
+}
+
+.wrapper {
+  min-height: calc(100vh - 80px); 
+}
+
+.footer {
+  background-color: #fcf0d2;
+  color: rgb(0, 0, 0);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.character-img {
+  max-width: 250px;
+}
+
+.dialogo-left,
+.dialogo-right {
+  position: relative;
+  border-radius: 10px;
+  font-family: 'Courier New', monospace;
+}
+
+/* Piquito a la derecha (para Geno) */
+.dialogo-left::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  transform: translateY(-50%);
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 20px solid #212529; /* mismo color que bg-dark */
+}
+
+/* Piquito a la izquierda (para Boshi) */
+.dialogo-right::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  transform: translateY(-50%);
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 20px solid #212529;
+}
